@@ -1,0 +1,127 @@
+
+
+@media(max-width: 1350px) {
+
+    .card_front{
+        top: 150px;
+        left: 10px !important;
+        // border: 2px solid rgb(94, 85, 85);
+    }
+
+    .card_back{
+        left: 50px !important;
+        // border: 2px solid rgb(94, 85, 85); 
+    }
+
+};
+
+@media(min-width: 700px) and (max-width: 850px){
+    .card_front{
+        top: 10px !important;
+        left: 100px !important;
+        // border: 2px solid rgb(94, 85, 85);
+        z-index: 2;
+
+       
+    }
+
+    .card_back{
+        top: 160px!important;
+        left: 50px !important;
+        // border: 2px solid rgb(94, 85, 85); 
+    }
+
+    form{
+    padding-top: 100px !important;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 1024px){
+.card_front{
+        top: 100px !important;
+        left: 100px !important;
+        // border: 2px solid rgb(94, 85, 85);
+        z-index: 2;
+
+       
+    }
+
+    .card_back{
+        top: 250px!important;
+        left: 50px !important;
+        // border: 2px solid rgb(94, 85, 85); 
+    }
+
+}
+
+@media(min-width: 300px) and (max-width: 541px){
+
+    .card_front{
+        top: 10px !important;
+        left: 20px !important;
+        // border: 2px solid rgb(94, 85, 85);
+        z-index: 2;
+        padding: 0 15px !important;
+        background-size: contain !important;
+        // border: 2px solid red;
+        height: 150px !important;
+        width: 314px !important;
+
+        .front_details{
+            img{
+                height: 30px !important;
+                width: 35px !important;
+                padding-top: 10px;
+            }
+
+            #c_number{
+                font-size: 1.3rem !important;
+            }
+            .cardholder_details_show{
+                // border: 2px solid red !important;
+                padding-right: 30px;
+                p{
+                    font-size: 0.5rem !important;
+
+                }
+            }
+        }
+       
+    }
+
+    .card_back{
+        top: 60px!important;
+        left: 80px !important;
+        height: 150px !important;
+        width: 314px !important;
+        background-size: contain !important;
+
+        .cvc_wrapper_show{
+            padding-right: 70px !important;
+            .cvc{
+                height: 42px !important;
+            }
+        }
+        // border: 2px solid rgb(94, 85, 85); 
+    }
+
+}
+
+@media(max-width: 400px){
+    form{
+        input{
+            width: 315px !important ;
+        }
+
+        #mm,#yy{
+            width: 70px !important;
+        }
+    }
+
+    .card_expire_details{
+        #cvc{
+            width: 150px !important;
+        }
+    }
+}
+// @media(max-width: 500px)

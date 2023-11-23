@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Nunito&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.main_wrapper {
+  height: 100vh;
+}
+.main_wrapper .row {
+  height: 100%;
+}
+.main_wrapper .row .card_show {
+  background-image: url("/images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 500px;
+  min-width: 300px;
+}
+.main_wrapper .row .card_show .card_front {
+  position: absolute;
+  background: url("/images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 150px;
+  left: 170px;
+  height: 230px;
+  width: 420px;
+  padding: 0 25px;
+}
+.main_wrapper .row .card_show .card_front .front_details {
+  height: 100%;
+  padding: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main_wrapper .row .card_show .card_front .front_details img {
+  height: 50px;
+  width: 90px;
+}
+.main_wrapper .row .card_show .card_front .front_details .card_details_show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main_wrapper .row .card_show .card_front .front_details .card_details_show #c_number {
+  font-size: 1.9rem;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.main_wrapper .row .card_show .card_front .front_details .card_details_show .cardholder_details_show {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.main_wrapper .row .card_show .card_front .front_details .card_details_show .cardholder_details_show p {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.main_wrapper .row .card_show .card_back {
+  position: absolute;
+  background: url("/images/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 440px;
+  left: 240px;
+  height: 230px;
+  width: 420px;
+}
+.main_wrapper .row .card_show .card_back .cvc_wrapper_show {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+.main_wrapper .row .card_show .card_back .cvc_wrapper_show .cvc {
+  height: 35px;
+  display: flex;
+  align-items: end;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+.main_wrapper .row .card_details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_wrapper .row .card_details form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 25px;
+}
+.main_wrapper .row .card_details form input {
+  height: 40px;
+  width: 390px;
+  border-radius: 8px;
+  padding-left: 10px;
+  border: 1px solid hsl(279, 6%, 55%);
+}
+.main_wrapper .row .card_details form input:focus {
+  outline: 2px solid rgb(0, 251, 255);
+}
+.main_wrapper .row .card_details form label {
+  text-transform: uppercase;
+  color: hsl(278, 68%, 11%);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.main_wrapper .row .card_details form #mm, .main_wrapper .row .card_details form #yy {
+  width: 70px;
+}
+
+.card_expire_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+.card_expire_details #cvc {
+  width: 150px;
+}
+
+.myBtn {
+  width: 100%;
+  height: 50px;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.completed {
+  width: 330px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.completed h2 {
+  color: hsl(278, 68%, 11%);
+  font-weight: 500;
+  font-size: 2.1rem;
+}
+.completed p {
+  color: hsl(279, 6%, 55%);
+}
+.completed img {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.invalidInput {
+  font-size: 0.7rem;
+  color: hsl(0, 100%, 66%);
+  display: none;
+}
+
+.invalidInputShow {
+  font-size: 0.7rem;
+  color: hsl(0, 100%, 66%);
+  display: flex;
+}
+
+.errorInput {
+  border: 2px solid hsl(0, 100%, 66%) !important;
+}
+
+@media (max-width: 1350px) {
+  .card_front {
+    top: 150px;
+    left: 10px !important;
+  }
+  .card_back {
+    left: 50px !important;
+  }
+}
+@media (min-width: 700px) and (max-width: 850px) {
+  .card_front {
+    top: 10px !important;
+    left: 100px !important;
+    z-index: 2;
+  }
+  .card_back {
+    top: 160px !important;
+    left: 50px !important;
+  }
+  form {
+    padding-top: 100px !important;
+  }
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+  .card_front {
+    top: 100px !important;
+    left: 100px !important;
+    z-index: 2;
+  }
+  .card_back {
+    top: 250px !important;
+    left: 50px !important;
+  }
+}
+@media (min-width: 300px) and (max-width: 541px) {
+  .card_front {
+    top: 10px !important;
+    left: 20px !important;
+    z-index: 2;
+    padding: 0 15px !important;
+    background-size: contain !important;
+    height: 150px !important;
+    width: 314px !important;
+  }
+  .card_front .front_details img {
+    height: 30px !important;
+    width: 35px !important;
+    padding-top: 10px;
+  }
+  .card_front .front_details #c_number {
+    font-size: 1.3rem !important;
+  }
+  .card_front .front_details .cardholder_details_show {
+    padding-right: 30px;
+  }
+  .card_front .front_details .cardholder_details_show p {
+    font-size: 0.5rem !important;
+  }
+  .card_back {
+    top: 60px !important;
+    left: 80px !important;
+    height: 150px !important;
+    width: 314px !important;
+    background-size: contain !important;
+  }
+  .card_back .cvc_wrapper_show {
+    padding-right: 70px !important;
+  }
+  .card_back .cvc_wrapper_show .cvc {
+    height: 42px !important;
+  }
+}
+@media (max-width: 400px) {
+  form input {
+    width: 315px !important;
+  }
+  form #mm, form #yy {
+    width: 70px !important;
+  }
+  .card_expire_details #cvc {
+    width: 150px !important;
+  }
+}
